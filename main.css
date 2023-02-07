@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-width: 376px;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  min-height: 100vh;
+  min-width: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main {
+  background-image: url("images/image-hero-mobile.jpg");
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #f8f5f5;
+  width: 376px;
+  position: relative;
+}
+
+header {
+  width: 86.6%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 3;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+.close-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.overlay {
+  background: #7a7979;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.mobile-menu {
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 325.5px;
+  margin-left: -162.75px;
+  position: absolute;
+  top: 88px;
+  left: 50%;
+  z-index: 2;
+  display: none;
+}
+
+.mobile-menu nav {
+  padding: 1.5rem 0 1.5rem 0;
+  position: relative;
+}
+
+.hr1 {
+  height: 1px;
+  border: none;
+  background: hsl(0, 0%, 77%);
+  width: 100%;
+  position: absolute;
+  top: 33%;
+}
+
+.hr2 {
+  height: 1px;
+  border: none;
+  background: hsl(0, 0%, 77%);
+  width: 100%;
+  position: absolute;
+  top: 66%;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  height: 165px;
+}
+
+.mobile-menu li {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-left: 1.4rem;
+  cursor: pointer;
+}
+
+.product-intro {
+  background: #fff;
+  width: 86.6%;
+  margin: auto;
+  padding: 3.2rem 1.5rem 2.25rem 1.5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  margin-bottom: 1.65rem;
+  position: relative;
+}
+
+.product-intro > img {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  margin-left: -28px;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: auto;
+  margin-bottom: 1.15rem;
+  width: 80%;
+}
+
+.product-intro p {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.intro-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-bottom button {
+  background: hsl(176, 50%, 47%);
+  color: #fff;
+  height: 3.5rem;
+  width: 13.35rem;
+  border: none;
+  border-radius: 1.8rem;
+  outline: none;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bookmark-span {
+  display: none;
+}
+
+.progress-container {
+  background: #fff;
+  width: 86.6%;
+  margin: auto;
+  padding: 2rem 1.5rem 2.4rem 1.5rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  margin-bottom: 1.65rem;
+}
+
+.progress-container ul {
+  list-style: none;
+}
+
+.stats ul {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat + span {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.stat ~ hr {
+  height: 1px;
+  border: none;
+  background: hsl(0, 0%, 77%);
+  width: 80px;
+}
+
+.progress-bar {
+  background: #f8f5f5;
+  height: 0.75rem;
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: 0.7rem;
+}
+
+.progress-bar-status {
+  background: hsl(176, 50%, 47%);
+  height: 0.75rem;
+  width: 78%;
+  border-radius: 2rem;
+}
+
+.about-section {
+  background: #fff;
+  width: 86.6%;
+  margin: auto;
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
+  border-radius: 0.6rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1.8rem;
+}
+
+h2 + p {
+  margin-bottom: 1.4rem;
+}
+
+.second-paragraph {
+  margin-bottom: 2rem;
+}
+
+.about-section > p {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+}
+
+.reward {
+  border: 1px solid hsl(0, 0%, 77%);
+  border-radius: 0.6rem;
+  padding: 1.4rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.pledge {
+  color: hsl(176, 50%, 47%);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.reward-description {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reward-stat {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.reward-remaining {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reward-remaining + span {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.92rem;
+  margin-left: 0.5rem;
+}
+
+.reward button {
+  background: hsl(176, 50%, 47%);
+  color: #fff;
+  height: 3rem;
+  width: 9.8rem;
+  border: none;
+  border-radius: 1.8rem;
+  outline: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+}
+
+#reward3 button {
+  background: hsl(0, 0%, 48%);
+}
+
+#reward3 {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.selection-modal {
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background: hsl(176, 72%, 28%);
+  }
+  .desktop-menu li:hover {
+    text-decoration: underline;
+  }
+  .bookmark-bar:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 100%;
+    background-image: url("images/image-hero-desktop.jpg");
+    background-size: 100% 400px;
+  }
+  header {
+    padding: 3rem 0;
+    width: 77%;
+    margin-bottom: 12rem;
+  }
+  .hamburger-icon {
+    display: none !important;
+  }
+  .close-menu-icon {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: none !important;
+  }
+  .desktop-menu {
+    display: block;
+  }
+  .desktop-menu ul {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  .desktop-menu li {
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .product-intro,
+  .progress-container,
+  .about-section {
+    width: 50%;
+  }
+  .product-intro {
+    padding: 3.2rem 2.4rem 2.6rem 2.4rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+  .product-intro p {
+    font-size: 1rem;
+    margin-bottom: 2.2rem;
+  }
+  .bookmark-bar {
+    background: #f8f5f5;
+    height: 3.5rem;
+    /* width: 11rem; */
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .bookmark-span {
+    color: hsl(0, 0%, 48%);
+    padding-left: 1rem;
+    padding-right: 1.8rem;
+    font-weight: 700;
+    display: block;
+  }
+  .progress-container {
+    padding: 2rem 3rem 3rem 3rem;
+  }
+  .stats ul {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .stats li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #days-progress,
+  #days-progress + span {
+    padding-left: 3rem;
+  }
+  .stats .stats-hr1 {
+    width: 70px;
+    position: absolute;
+    rotate: 90deg;
+    left: 30%;
+    top: 33%;
+  }
+  .stats .stats-hr2 {
+    width: 70px;
+    position: absolute;
+    rotate: 90deg;
+    left: 73%;
+    top: 33%;
+  }
+  .about-section {
+    padding: 3rem 2.5rem 1.5rem 2.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .about-section > p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .reward {
+    padding: 2rem;
+  }
+  .reward-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .pledge {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .reward-description {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .reward-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reward-stat {
+    margin: 0;
+  }
+}

@@ -7,13 +7,13 @@
 }
 
 html {
-  min-width: 376px;
+  min-width: 23.5rem;
 }
 
 body {
   font-family: "Commissioner", sans-serif;
   min-height: 100vh;
-  min-width: 376px;
+  min-width: 23.5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -21,12 +21,12 @@ body {
 
 main {
   background-image: url("images/image-hero-mobile.jpg");
-  background-size: 100% 300px;
+  background-size: 100% 18.75rem;
   background-repeat: no-repeat;
   background-position: top;
   background-color: #f8f5f5;
-  width: 376px;
-  max-width: 1440px;
+  width: 23.5rem;
+  max-width: 90rem;
   position: relative;
 }
 
@@ -71,7 +71,7 @@ header {
   width: 325.5px;
   margin-left: -162.75px;
   position: absolute;
-  top: 88px;
+  top: 5.5rem;
   left: 50%;
   z-index: 2;
   display: none;
@@ -185,7 +185,7 @@ h1 {
 }
 
 .stats ul {
-  height: 310px;
+  height: 19.375rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -215,7 +215,7 @@ h1 {
   height: 1px;
   border: none;
   background: hsl(0, 0%, 77%);
-  width: 80px;
+  width: 5rem;
 }
 
 .progress-bar {
@@ -335,7 +335,7 @@ h3 {
   width: 325.5px;
   /* margin-left: -162.75px; */
   position: absolute;
-  top: 122px;
+  top: 7.625rem;
   /* left: 50%; */
   z-index: 5;
   padding: 2rem 1.4rem 0.5rem 1.4rem;
@@ -449,8 +449,8 @@ h3 {
   display: none;
   left: 5px;
   top: 5px;
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
   background: hsl(176, 50%, 47%);
   border-radius: 50%;
 }
@@ -531,7 +531,7 @@ label + span {
   font-size: 0.85rem;
   font-weight: 700;
   position: absolute;
-  left: 24px;
+  left: 1.5rem;
   top: 50%;
   margin-top: -8.5px;
   pointer-events: none;
@@ -647,7 +647,7 @@ h4 {
   main {
     width: 100%;
     background-image: url("images/image-hero-desktop.jpg");
-    background-size: 100% 400px;
+    background-size: 100% 25rem;
   }
   header {
     padding: 3rem 0;
@@ -670,7 +670,7 @@ h4 {
     display: block;
   }
   .desktop-menu ul {
-    width: 230px;
+    width: 14.375rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -700,7 +700,6 @@ h4 {
   .bookmark-bar {
     background: #f8f5f5;
     height: 3.5rem;
-    /* width: 11rem; */
     border-radius: 1.8rem;
     display: flex;
     justify-content: space-between;
@@ -718,7 +717,7 @@ h4 {
     padding: 2rem 3rem 3rem 3rem;
   }
   .stats ul {
-    height: 100px;
+    height: 6.25rem;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -737,14 +736,14 @@ h4 {
     padding-left: 3rem;
   }
   .stats .stats-hr1 {
-    width: 70px;
+    width: 4.375rem;
     position: absolute;
     rotate: 90deg;
     left: 30%;
     top: 33%;
   }
   .stats .stats-hr2 {
-    width: 70px;
+    width: 4.375rem;
     position: absolute;
     rotate: 90deg;
     left: 73%;
@@ -789,11 +788,7 @@ h4 {
   .reward-stat {
     margin: 0;
   }
-  /* .modal-overlay {
-    display: block;
-  } */
   .selection-modal {
-    /* display: block; */
     width: 50%;
     top: 185px;
     padding: 2.5rem 2.2rem;
@@ -854,7 +849,7 @@ h4 {
   .success {
     width: 40%;
     padding: 3rem 2.5rem 2.4rem 2.5rem;
-    top: 200px;
+    top: 12.5rem;
   }
   .success h4 {
     font-size: 1.4rem;

@@ -22,6 +22,8 @@ const backers = document.querySelector("#backers-progress");
 const bambooRemaining = document.querySelectorAll(".bamboo-remaining");
 const blackRemaining = document.querySelectorAll(".black-remaining");
 const progressBarStatus = document.querySelector(".progress-bar-status");
+const successModal = document.querySelector(".success");
+const successButton = document.querySelector(".success button");
 
 hamburger.addEventListener("click", () => {
   hamburger.style.display = "none";
@@ -115,7 +117,7 @@ successButtons.forEach((button) => {
 
     dollarProgress.innerHTML = "$" + updatedNumber.toLocaleString();
 
-    //update backers
+    //update amount of backers
 
     backers.innerHTML = (
       parseInt(backers.innerHTML.replace(/,/g, "")) + 1
@@ -144,8 +146,16 @@ successButtons.forEach((button) => {
       });
     }
 
-    //close modal and uncheck all options
+    //open success modal and close selection modal
 
-    modalCloseIcon.click();
+    modal.style.display = "none";
+    successModal.style.display = "block";
   });
+});
+
+successButton.addEventListener("click", () => {
+  successModal.style.display = "none";
+
+  // close modal overlay and uncheck all checkboxes from selection modal
+  modalCloseIcon.click();
 });

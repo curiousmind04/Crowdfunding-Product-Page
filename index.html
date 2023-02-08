@@ -207,16 +207,18 @@
         </p>
         <div class="selected" id="no-reward-selected">
           <hr />
-          <label for="no-reward-pledge">Enter your pledge</label>
-          <div class="selected-bottom">
-            <span class="dollar-sign">$</span>
-            <input
-              type="number"
-              placeholder="1"
-              id="no-reward-pledge"
-              value="1"
-            />
-            <button class="continue-success">Continue</button>
+          <div class="selected-bottom-desktop">
+            <label for="no-reward-pledge">Enter your pledge</label>
+            <div class="selected-bottom">
+              <span class="dollar-sign">$</span>
+              <input
+                type="number"
+                placeholder="1"
+                id="no-reward-pledge"
+                value="1"
+              />
+              <button class="continue-success">Continue</button>
+            </div>
           </div>
         </div>
       </div>
@@ -237,20 +239,24 @@
           launch our promotional campaign, and you’ll be added to a special
           Backer member list.
         </p>
-        <span class="modal-reward-remaining bamboo-remaining">101</span>
-        <span>left</span>
+        <div class="remaining-container">
+          <span class="modal-reward-remaining bamboo-remaining">101</span>
+          <span>left</span>
+        </div>
         <div class="selected" id="bamboo-reward-selected">
           <hr />
-          <label for="bamboo-reward-pledge">Enter your pledge</label>
-          <div class="selected-bottom">
-            <span class="dollar-sign">$</span>
-            <input
-              type="number"
-              placeholder="25"
-              id="bamboo-reward-pledge"
-              value="25"
-            />
-            <button class="continue-success bamboo-success">Continue</button>
+          <div class="selected-bottom-desktop">
+            <label for="bamboo-reward-pledge">Enter your pledge</label>
+            <div class="selected-bottom">
+              <span class="dollar-sign">$</span>
+              <input
+                type="number"
+                placeholder="25"
+                id="bamboo-reward-pledge"
+                value="25"
+              />
+              <button class="continue-success bamboo-success">Continue</button>
+            </div>
           </div>
         </div>
       </div>
@@ -270,20 +276,24 @@
           You get a Black Special Edition computer stand and a personal thank
           you. You’ll be added to our Backer member list. Shipping is included.
         </p>
-        <span class="modal-reward-remaining black-remaining">64</span>
-        <span>left</span>
+        <div class="remaining-container">
+          <span class="modal-reward-remaining black-remaining">64</span>
+          <span>left</span>
+        </div>
         <div class="selected" id="black-reward-selected">
           <hr />
-          <label for="black-reward-pledge">Enter your pledge</label>
-          <div class="selected-bottom">
-            <span class="dollar-sign">$</span>
-            <input
-              type="number"
-              placeholder="75"
-              id="black-reward-pledge"
-              value="75"
-            />
-            <button class="continue-success black-success">Continue</button>
+          <div class="selected-bottom-desktop">
+            <label for="black-reward-pledge">Enter your pledge</label>
+            <div class="selected-bottom">
+              <span class="dollar-sign">$</span>
+              <input
+                type="number"
+                placeholder="75"
+                id="black-reward-pledge"
+                value="75"
+              />
+              <button class="continue-success black-success">Continue</button>
+            </div>
           </div>
         </div>
       </div>
@@ -304,8 +314,10 @@
           personal thank you. You’ll be added to our Backer member list.
           Shipping is included.
         </p>
-        <span class="modal-reward-remaining">0</span>
-        <span>left</span>
+        <div class="remaining-container">
+          <span class="modal-reward-remaining">0</span>
+          <span>left</span>
+        </div>
         <div class="selected">Enter your pledge $200 Continue</div>
       </div>
     </div>
@@ -315,9 +327,14 @@
     <!-- Success modal start -->
 
     <div class="success">
-      Thanks for your support! Your pledge brings us one step closer to sharing
-      Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our
-      campaign is completed. Got it!
+      <img src="images/icon-check.svg" alt="success check icon" />
+      <h4>Thanks for your support!</h4>
+      <p>
+        Your pledge brings us one step closer to sharing Mastercraft Bamboo
+        Monitor Riser worldwide. You will get an email once our campaign is
+        completed.
+      </p>
+      <button>Got it!</button>
     </div>
 
     <!-- Success modal end -->

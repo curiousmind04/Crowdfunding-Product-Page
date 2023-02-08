@@ -228,7 +228,7 @@ h1 {
 .progress-bar-status {
   background: hsl(176, 50%, 47%);
   height: 0.75rem;
-  width: 78%;
+  width: 90%;
   border-radius: 2rem;
 }
 
@@ -329,7 +329,251 @@ h3 {
 }
 
 .selection-modal {
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 325.5px;
+  /* margin-left: -162.75px; */
+  position: absolute;
+  top: 122px;
+  /* left: 50%; */
+  z-index: 5;
+  padding: 2rem 1.4rem 0.5rem 1.4rem;
   display: none;
+}
+
+.modal-overlay {
+  background: #7a7979;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: none;
+}
+
+.modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.modal-close-icon {
+  cursor: pointer;
+}
+
+.modal-description {
+  font-size: 0.88rem;
+  color: hsl(0, 0%, 48%);
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.reward-option {
+  border: 1px solid hsl(0, 0%, 77%);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.44rem 1.8rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reward-modal-top {
+  height: 41.5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.reward-option p {
+  font-size: 0.88rem;
+  color: hsl(0, 0%, 48%);
+  line-height: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.reward-option .reward-option1-p {
+  margin-bottom: 0;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 23px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 77%);
+}
+
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: hsl(176, 50%, 47%);
+  border-radius: 50%;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.top-right {
+  height: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+label + span {
+  color: hsl(176, 50%, 47%);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.modal-reward-remaining {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.modal-reward-remaining + span {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.92rem;
+  margin-left: 0.4rem;
+}
+
+#mahogany-modal {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.selected {
+  text-align: center;
+  margin-top: 1.6rem;
+  display: none;
+}
+
+.selected hr {
+  position: relative;
+  width: 276.72px;
+  margin-left: -24px;
+  border: none;
+  height: 1px;
+  background: hsl(0, 2%, 90%);
+  margin-bottom: 1.8rem;
+}
+
+.selected label {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 48%);
+}
+
+.selected-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.35rem;
+  margin-bottom: -0.4rem;
+  position: relative;
+}
+
+.dollar-sign {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  margin-top: -8.5px;
+  pointer-events: none;
+}
+
+.selected input {
+  height: 2.96rem;
+  width: 6.2rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 77%);
+  border-radius: 1.8rem;
+  outline: none;
+  padding-left: 2.4rem;
+  cursor: pointer;
+}
+
+.selected input::placeholder {
+  color: #000;
+}
+
+.selected button {
+  background: hsl(176, 50%, 47%);
+  color: #fff;
+  height: 3rem;
+  width: 7.2rem;
+  border: none;
+  border-radius: 1.8rem;
+  outline: none;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+}
+
+.active {
+  border: 2px solid hsl(176, 72%, 28%);
+}
+
+.active .selected {
+  display: block;
 }
 
 .success {
@@ -345,6 +589,15 @@ h3 {
   }
   .bookmark-bar:hover {
     opacity: 0.8;
+  }
+  .checkmark:hover {
+    background-color: #eee;
+  }
+  .reward-modal-top label:hover {
+    color: hsl(176, 50%, 47%);
+  }
+  .selected input:hover {
+    border: 1px solid hsl(176, 50%, 47%);
   }
 }
 
@@ -366,6 +619,9 @@ h3 {
     display: none !important;
   }
   .mobile-menu {
+    display: none !important;
+  }
+  .overlay {
     display: none !important;
   }
   .desktop-menu {

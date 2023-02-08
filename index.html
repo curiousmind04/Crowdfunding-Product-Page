@@ -19,6 +19,7 @@
   <body>
     <main>
       <div class="overlay" role="img" aria-hidden="true"></div>
+      <div class="modal-overlay" role="img" aria-hidden="true"></div>
       <header>
         <img src="images/logo.svg" alt="logo icon" />
         <img
@@ -60,7 +61,7 @@
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div class="intro-bottom">
-          <button>Back this project</button>
+          <button class="open-modal">Back this project</button>
           <div class="bookmark-bar">
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
@@ -131,10 +132,10 @@
           </p>
           <div class="reward-bottom">
             <div class="reward-stat">
-              <span class="reward-remaining" id="reward1-remaining">101</span
+              <span class="reward-remaining bamboo-remaining">101</span
               ><span>left</span>
             </div>
-            <button>Select Reward</button>
+            <button class="open-modal bamboo-focus">Select Reward</button>
           </div>
         </div>
         <div class="reward" id="reward2">
@@ -149,10 +150,10 @@
           </p>
           <div class="reward-bottom">
             <div class="reward-stat">
-              <span class="reward-remaining" id="reward2-remaining">64</span
+              <span class="reward-remaining black-remaining">64</span
               ><span>left</span>
             </div>
-            <button>Select Reward</button>
+            <button class="open-modal black-focus">Select Reward</button>
           </div>
         </div>
         <div class="reward" id="reward3">
@@ -167,8 +168,7 @@
           </p>
           <div class="reward-bottom">
             <div class="reward-stat">
-              <span class="reward-remaining" id="reward3-remaining">0</span
-              ><span>left</span>
+              <span class="reward-remaining">0</span><span>left</span>
             </div>
             <button disabled>Out of Stock</button>
           </div>
@@ -179,33 +179,134 @@
     <!-- Selection modal start -->
 
     <div class="selection-modal">
-      <span>Back this project</span>
-      <p>
+      <div class="modal-top">
+        <p class="modal-title">Back this project</p>
+        <img
+          src="images/icon-close-modal.svg"
+          alt="modal close icon"
+          class="modal-close-icon"
+        />
+      </div>
+      <p class="modal-description">
         Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
         the world?
       </p>
-      <div>
-        Pledge with no reward Choose to support us without a reward if you
-        simply believe in our project. As a backer, you will be signed up to
-        receive product updates via email.
+
+      <div class="reward-option">
+        <div class="reward-modal-top">
+          <label class="checkbox-container">
+            <input type="checkbox" id="no-reward" />
+            <span class="checkmark"></span>
+          </label>
+          <label for="no-reward">Pledge with no reward</label>
+        </div>
+        <p class="reward-option1-p">
+          Choose to support us without a reward if you simply believe in our
+          project. As a backer, you will be signed up to receive product updates
+          via email.
+        </p>
+        <div class="selected" id="no-reward-selected">
+          <hr />
+          <label for="no-reward-pledge">Enter your pledge</label>
+          <div class="selected-bottom">
+            <span class="dollar-sign">$</span>
+            <input
+              type="number"
+              placeholder="1"
+              id="no-reward-pledge"
+              value="1"
+            />
+            <button class="continue-success">Continue</button>
+          </div>
+        </div>
       </div>
-      <div>
-        Bamboo Stand Pledge $25 or more You get an ergonomic stand made of
-        natural bamboo. You've helped us launch our promotional campaign, and
-        you’ll be added to a special Backer member list. 101 left
-        <div>Enter your pledge $25 Continue</div>
+
+      <div class="reward-option">
+        <div class="reward-modal-top">
+          <label class="checkbox-container">
+            <input type="checkbox" id="bamboo-reward" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="top-right">
+            <label for="bamboo-reward">Bamboo Stand</label>
+            <span>Pledge $25 or more</span>
+          </div>
+        </div>
+        <p>
+          You get an ergonomic stand made of natural bamboo. You've helped us
+          launch our promotional campaign, and you’ll be added to a special
+          Backer member list.
+        </p>
+        <span class="modal-reward-remaining bamboo-remaining">101</span>
+        <span>left</span>
+        <div class="selected" id="bamboo-reward-selected">
+          <hr />
+          <label for="bamboo-reward-pledge">Enter your pledge</label>
+          <div class="selected-bottom">
+            <span class="dollar-sign">$</span>
+            <input
+              type="number"
+              placeholder="25"
+              id="bamboo-reward-pledge"
+              value="25"
+            />
+            <button class="continue-success bamboo-success">Continue</button>
+          </div>
+        </div>
       </div>
-      <div>
-        Black Edition Stand Pledge $75 or more You get a Black Special Edition
-        computer stand and a personal thank you. You’ll be added to our Backer
-        member list. Shipping is included. 64 left
-        <div>Enter your pledge $75 Continue</div>
+
+      <div class="reward-option">
+        <div class="reward-modal-top">
+          <label class="checkbox-container">
+            <input type="checkbox" id="black-reward" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="top-right">
+            <label for="black-reward">Black Edition Stand</label>
+            <span>Pledge $75 or more</span>
+          </div>
+        </div>
+        <p>
+          You get a Black Special Edition computer stand and a personal thank
+          you. You’ll be added to our Backer member list. Shipping is included.
+        </p>
+        <span class="modal-reward-remaining black-remaining">64</span>
+        <span>left</span>
+        <div class="selected" id="black-reward-selected">
+          <hr />
+          <label for="black-reward-pledge">Enter your pledge</label>
+          <div class="selected-bottom">
+            <span class="dollar-sign">$</span>
+            <input
+              type="number"
+              placeholder="75"
+              id="black-reward-pledge"
+              value="75"
+            />
+            <button class="continue-success black-success">Continue</button>
+          </div>
+        </div>
       </div>
-      <div>
-        Mahogany Special Edition Pledge $200 or more You get two Special Edition
-        Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be
-        added to our Backer member list. Shipping is included. 0 left
-        <div>Enter your pledge $200 Continue</div>
+
+      <div class="reward-option" id="mahogany-modal">
+        <div class="reward-modal-top">
+          <label class="checkbox-container">
+            <input type="checkbox" id="mahogany-reward" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="top-right">
+            <label for="mahogany-reward">Mahogany Special Edition</label>
+            <span>Pledge $200 or more</span>
+          </div>
+        </div>
+        <p>
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+          personal thank you. You’ll be added to our Backer member list.
+          Shipping is included.
+        </p>
+        <span class="modal-reward-remaining">0</span>
+        <span>left</span>
+        <div class="selected">Enter your pledge $200 Continue</div>
       </div>
     </div>
 
